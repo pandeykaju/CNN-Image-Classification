@@ -21,7 +21,7 @@ class_names = [
 # Load trained CNN model
 @st.cache_resource
 def load_cnn_model():
-    model_path = Path(__file__).parent / "models" / "best_cnn.keras"
+    model_path = Path(__file__).parent / "best_cnn.keras"
     return tf.keras.models.load_model(
         model_path,
         compile=False
